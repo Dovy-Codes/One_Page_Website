@@ -40,8 +40,14 @@ nav a {
 nav a:hover{
     color: goldenrod;
 }
+
+
 /* -----------LIGHTBOX SECTION---------
 -----------------------------------*/
+#home-lightbox {
+    margin: 5rem 0;
+}
+
 .row > .column {
     padding: 0 8px;
   }
@@ -171,7 +177,7 @@ nav a:hover{
   
   .active,
   .demo:hover {
-    opacity: 1;
+    opacity: 1 !important;
   }
   
   img.hover-shadow {
@@ -195,7 +201,11 @@ nav a:hover{
 /* -----------FORM SECTION---------
 -----------------------------------*/
 
+.form-container * {
+    box-sizing: content-box; 
+}
 .form-container {
+    box-sizing: content-box; 
     width:100%;
     background-color: rgba(3,46,80,255);
 }
