@@ -9,6 +9,10 @@ body {
     text-align: center;
 }
 
+/* * {
+    box-sizing: border-box;
+  } */
+
 .container {
     margin: auto;
 }
@@ -28,7 +32,15 @@ a {
     padding: .5em 0 .5em 2em;
     text-transform: uppercase;
 }
+nav a {
+    display: inline-block;
+    transition: color 250ms ease-in-out;
+    padding: .325rem .5rem;
+}
 
+nav a:hover{
+    color: goldenrod;
+}
 /* -----------HOME SECTION---------
 -----------------------------------*/
 
@@ -109,8 +121,16 @@ a {
     position: absolute;
     height: 10.8em;
     width: 73%;
-    min-width: 522px;
+    min-width: min(100%, 522px);
 }
+/* -----------FOOTER---------------
+-----------------------------------*/
+footer {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+
 /* -----------MEDIA QUERIES---------
 -----------------------------------*/
 @media (min-width: 1200px) {
