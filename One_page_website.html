@@ -29,6 +29,86 @@
             </div>
         </section>
 
+        <!-- LightBox section -->
+        <div class="row">
+            <div class="column">
+            <img src="./images/London.jfif" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/Endinburgh.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/Brighton.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/Lake.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/Peak.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="./images/London.jfif" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="./images/Endinburgh.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="./images/Brighton.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="./images/Lake.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="./images/Peak.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="./images/London.jfif" onclick="currentSlide(1)" alt="London">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="./images/Endinburgh.jpg" onclick="currentSlide(2)" alt="Edinburgh">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="./images/Brighton.jpg" onclick="currentSlide(3)" alt="Brighton">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="./images/Lake.jpg" onclick="currentSlide(4)" alt="Lake District">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/Peak.jpg" onclick="currentSlide(5)" alt="Peak District">
+            </div>
+            </div>
+        </div>
+
         <!--Locations-->
         <section id="locations">
              <div class="container">   
