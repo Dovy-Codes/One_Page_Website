@@ -34,3 +34,8 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  //We add this event listener so that the file would fade in when it has finished loading
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+  });

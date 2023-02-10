@@ -7,7 +7,11 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        
+        <script>
+        //This adds class fade out to body element when the website is fully loaded
+        //We add it here otherwise it might cause a flicker because DOM would be built before JS engages
+        document.body.classList.add('fade-out');
+        </script>
         <!--Navigation bar-->
         <div class="navigation">
                 <nav id="main-nav">
@@ -185,7 +189,7 @@
             </section>
 
             <!--Contacts-->
-            <div class="container">
+            <div class="container" id="contacts">
                 <div class="form-container">
                         <form action="" method="post" class="contacts">
                             <input class="book" type="text" value="First Name">
